@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> <!--informar o navegador o que a gente quer que aconteça, 
+    como importação de arquivo, tótulo da página e etc... 
+    nada dentro do head aparece visualmente-->
+
+    <title>Estudos HTML Rhai</title> <!--titulo da página-->
+
+    <!--as tags de meta são metadados, estamos enviando dados codificados
+    que o navegador vai entender e vai projetar na tela-->
+
+    <meta charset="UTF-8"> <!--não tem como monitorar de onde o usuário está entrando, então o UTF-8 é um
+    dos principais pois é a codifição de caracteres e vai aceitar todos caracteres especiais como ç ~ e etc-->
+
+    <meta name="viewport" content="width=device-width, intial-scale=1"> <!--identifica o tamanho da tela do
+    dispositivo que você está usando pra poder fazer a responsividade do código-->
+
+    <link rel="stylesheet" href="style.css"> <!--linkar o arquivo css que estamos criando junto aqui nesse código-->
+
+    <!--SOBRE AS FONTES: tem que ir no fonts.google e procurar a font e clicar em Select na direita, 
+        selecionar todos os pesos e fontes que forem ser usados na peça-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!--FIM das fontes... o jeito que elas serão usadas tão especificadas no código css-->
+
+    </head>
+    
+
+    <body>
+
+        <section class="container principal"> <!--a section vai abranger essa area do h1 e imagem-->
+
+            <div class="container__caixa">
+
+                <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1> <!--titulo-->
+
+                <img src="img/Combo.png" alt="Descrição da imagem" class="container__imagem"> <!--imagem do combo-->
+
+                <a href="www.dpaschoal.com.br" class="container__botao">Assine por 12x de R$ 120,00*</a> <!--botao, é identificado sempre pela class-->
+
+                <a href="dpaschoal.com.br" class="container__botao botao__secundario">Assinar somente o Alura+</a> <!--botao, é identificado sempre pela class,
+                nesse caso tem 2 class-->
+
+                <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
+
+            </div>
+            
+     </section> <!--section dentro do CSS são representadas por pontos . -->
+
+
+
+     
+     <section class="container secundario"> <!--aqui começa a parte 2, quando vc roda um pouco a página . -->
+
+        <img src="img/Plataformas.png" alt="Um monitor e celular" class="secundario__imagem">
+
+        <div class="container__descricao">
+
+            <h2 class="descricao__titulo">Assista do seu jeito</h2>
+
+            <p class="descricao__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p>
+        
+        </div>
+
+     </section>
+
+
+
+     <section class="container secundario"> <!--aqui começa a parte 3, quando vc roda um pouco a página . -->
+
+        <div class="container__descricao">
+
+            <p class="descricao__texto">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia e aprender inglês ou espanhol, onde e como quiser.</p>
+        
+            <a href="www.dpaschoal.com.br" class="container__botao secundario__botao">Assinar o Combo+</a>
+
+        </div> <!--fora da caixinha com o texto e botão, é como se tivesse de um lado da grid-->
+
+        <img src="img/Telas.png" alt="Tela da alura pls" class="secundario__imagem">
+
+     </section>
+
+
+
+    <section class="container secundario"> <!--aqui começa a parte 4, quando vc roda um pouco a página . -->
+
+        <img src="img/Notebook.png" alt="Foto Notebook" class="secundario__imagem"> <!--a imagem vem antes da div pra ficar na esquerda da página-->
+
+        <div class="container__descricao">
+
+            <p class="descricao__titulo">Baixe seus cursos</p>
+
+            <p class="descricao__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
+
+        </div>
+  
+
+    </section>
+
+
+    <section class="dispositivos"> <!--aqui já deixa de ser a class secundária-->
+
+        <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos</h2>
+
+        <ul class="dispositivos__lista"> <!--toda lista sempre fica dentro do UL-->
+
+            <li> <!--cada LI é um item da lista, um erro que enfrentei foi não fechar a tag... os itens ficaram empilhados-->
+
+                <img src="img/tv.png" alt="icone de televisao">
+                <h3 class="lista__item">TV</h3>
+
+            </li>
+
+            <li>
+
+                <img src="img/computador.png" alt="icone computador">
+                <h3 class="lista__item">Computador</h3>
+                
+            </li>
+            
+            <li>
+
+                <img src="img/celular.png" alt="imagem celular">
+                <h3 class="lista__item">Celular</h3>
+
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <footer class="rodape">
+
+                <img src="img/Logo.png" alt="loo alura" class="rodape__logo">
+
+                <ul class="rodape__lista">
+
+                    <li class="lista__link">
+                        <a href="www.dpaschoal.com.br">Idioma</a>
+                    </li>
+
+
+                    <li class="lista__link">
+                        <a href="www.dpaschoal.com.br">Dispositivos Compatíveis</a>
+                    </li>
+
+
+                    <li class="lista__link">
+                        <a href="www.dpaschoal.com.br">Contrato de assinatura</a>
+                    </li>
+
+
+                    <li class="lista__link">
+                        <a href="www.dpaschoal.com.br">Política de privacidade</a>
+                    </li>
+
+
+                    <li class="lista__link">
+                        <a href="www.dpaschoal.com.br">Proteção de dados no Brasil</a>
+                    </li>
+
+
+                    <li class="lista__link">
+                        <a href="www.dpaschoal.com.br">Anúncios personalizados</a>
+                    </li>
+
+
+                    <li class="lista__link">
+                        <a href="www.dpaschoal.com.br">Ajuda</a>
+                    </li>
+
+                </ul>
+
+                <p class="rodape__texto">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+
+
+                <p class="rodape__texto">Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
+
+                
+    </footer>
+
+
+    </body>
+
+</html>
